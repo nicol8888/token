@@ -14,10 +14,7 @@ use {
 #[repr(C)]
 #[derive(Clone, Copy, Debug, Default, PartialEq)]
 pub struct Mint {
-    /// Optional authority used to mint new tokens. The mint authority may only
-    /// be provided during mint creation. If no mint authority is present
-    /// then the mint has a fixed supply and no further tokens may be
-    /// minted.
+    
     pub mint_authority: COption<Pubkey>,
     /// Total supply of tokens.
     pub supply: u64,
